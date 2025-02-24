@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('bimg1.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the image stays fixed while scrolling */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Section */
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(236, 240, 241, 0.9); /* Light gray background */
+    border: 2px solid #2c3e50; /* Dark blue border */
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #2c3e50; /* Dark blue for a professional look */
+    animation: fadeInDown 1.5s ease-out;
+  }
+  
+  header .tagline {
+    font-size: 1.5rem;
+    color: #e74c3c; /* Red for a pop of color */
+    margin: 10px 0;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  header .intro {
+    font-size: 1.1rem;
+    color: #34495e; /* Dark gray-blue for readability */
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  /* About Me Section */
+  .about-me {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(236, 240, 241, 0.9); /* Light gray background */
+    border: 2px solid #2c3e50; /* Dark blue border */
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue */
+  }
+  
+  .about-me p {
+    font-size: 1.1rem;
+    color: #34495e; /* Dark gray-blue */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Gallery Section */
+  .gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(236, 240, 241, 0.9); /* Light gray background */
+    border: 2px solid #2c3e50; /* Dark blue border */
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Dark blue */
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .image-card {
+    background: #fff; /* White background for cards */
+    border: 1px solid #2c3e50; /* Dark blue border */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-caption {
+    font-size: 1.1rem;
+    color: #e74c3c; /* Red for captions */
+    padding: 15px;
+    margin: 0;
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(236, 240, 241, 0.9); /* Light gray background */
+    border: 2px solid #2c3e50; /* Dark blue border */
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue */
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    color: #34495e; /* Dark gray-blue */
+    margin-bottom: 30px;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #2c3e50; /* Dark blue */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    background: #34495e; /* Dark gray-blue on hover */
+    transform: translateY(-5px);
+  }
+  
+  .contact-link i {
+    margin-right: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(236, 240, 241, 0.9); /* Light gray background */
+    border: 2px solid #2c3e50; /* Dark blue border */
+    border-radius: 15px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #34495e; /* Dark gray-blue */
+    margin: 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
